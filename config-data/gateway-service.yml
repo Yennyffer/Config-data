@@ -20,12 +20,12 @@ spring:
         - id: microservicio2
           uri: lb://microservicio2
           predicates:
-            - Path=/products/**
+            - Path=/accounts/**
         - id: microservicio3
           uri: lb://microservicio3
           predicates:
-            - Path=/invoices/**
+            - Path=/credits/**
         - id: microservicio4
           uri: lb://microservicio4
           predicates:
-            - Path=/invoices/**
+            - Path=/transacctions/**
