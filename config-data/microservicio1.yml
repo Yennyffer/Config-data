@@ -1,7 +1,17 @@
 server:
     port: 8081
+
 spring:
-    data:
-        mongodb:
-            database: dbproyecto01
-            host: localhost
+  data:
+    mongodb:
+      database: dbproyecto01
+      host: localhost
+  application:
+    name: microservicio1
+
+eureka:
+  instance:
+    hostname: localhost
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8099/eureka/
+    prefer-ip-address: true
