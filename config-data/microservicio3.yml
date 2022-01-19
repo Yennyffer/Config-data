@@ -10,3 +10,15 @@ application:
     endpoints:
         url:
             valid_address: http://localhost:8081/api/
+            
+resilience4j.circuitbreaker:
+    instances:
+        DeleteCredit:
+            registerHealthIndicator: true
+            slidingWindowSize: 10
+            permittedNumberOfCallsInHalfOpenState: 3
+            slidingWindowType: TIME_BASED
+            minimumNumberOfCalls: 4
+            waitDurationInOpenState: 2s
+            failureRateThreshold: 50
+            eventConsumerBufferSize: 10
