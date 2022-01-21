@@ -20,7 +20,7 @@ spring:
         - id: microservicio1
           uri: http://localhost:8081
           predicates:
-            - Path=api/v1/customers/**
+            - Path=/api/v1/customers/**
         - id: microservicio2
           uri: lb://microservicio2
           predicates:
