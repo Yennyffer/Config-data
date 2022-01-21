@@ -18,9 +18,9 @@ spring:
           enabled: true
       routes:
         - id: microservicio1
-          uri: lb://microservicio1
+          uri: http://localhost:8081
           predicates:
-            - Path=/customers/**
+            - Path=api/v1/customers/**
         - id: microservicio2
           uri: lb://microservicio2
           predicates:
