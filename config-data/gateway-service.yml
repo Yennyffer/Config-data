@@ -22,14 +22,14 @@ spring:
           predicates:
             - Path=/api/v1/customers/**
         - id: microservicio2
-          uri: lb://microservicio2
+          uri: http://localhost:8082
           predicates:
-            - Path=/accounts/**
+            - Path=/api/v1/accounts/**
         - id: microservicio3
-          uri: lb://microservicio3
+          uri: http://localhost:8083
           predicates:
-            - Path=/credits/**
+            - Path=/api/v1/credits/**
         - id: microservicio4
-          uri: lb://microservicio4
+          uri: http://localhost:8084
           predicates:
-            - Path=/transacctions/**
+            - Path=/api/v1/transacctions/**
