@@ -4,8 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      database: dbproyecto01
-      host: localhost
+      uri: mongodb://dbproyecto01:J15vu75NFbY1tbAc2jRRCYLHl1eqtKIwpHY9LR0bT3NQQn68Uiic1I9ta4zPBaUyHnhIUH3zOxmp2g1scZyq8w==@dbproyecto01.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@dbproyecto01@
   application:
     name: microservicio2
 
