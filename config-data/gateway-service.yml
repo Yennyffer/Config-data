@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: 20.83.136.81
     preferIpAddress: true
   client:
     serviceUrl:
