@@ -13,6 +13,6 @@ eureka:
   instance:
     hostname: localhost
     serviceUrl:
-      defaultZone: http://20.83.136.81:8761/eureka/
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
     preferIpAddress: true
 
